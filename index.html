@@ -24,6 +24,27 @@
                 </menu>
             </header>
             <main>
+                <div class="Contenu">
+                    <div class="Data">
+                        <h4 class="TitleArticle">Comprendre le CGU</h4>
+                        <a href="#"><img src="https://via.placeholder.com/150" alt="Conditions générales d'utilisation"></a>
+                    </div>
+                    <div class="Data">
+                        <h4 class="TitleArticle">C'est quoi les coockies??</h4>
+                        <a href="#"><img src="https://via.placeholder.com/150" alt="Conditions générales d'utilisation"></a>
+                    </div>
+                    <div class="Data">
+                        <h4 class="TitleArticle">Tor, un moyen de surfer d'une manière anonyme</h4>
+                        <a href="#"><img src="https://via.placeholder.com/150" alt="Conditions générales d'utilisation"></a>
+                    </div>
+                    <div class="Data">
+                        <h4 class="TitleArticle">Le VPN, se rendre vraiment anonyme</h4>
+                        <a href="#"><img src="https://via.placeholder.com/150" alt="Conditions générales d'utilisation"></a>
+                    </div>
+                    <!-- <div class="Data"></div>
+                    <div class="Data"></div>
+                    <div class="Data"></div> -->
+                </div>
                 <div class="Chatbot">
                     <!-- <a href="#" class="LienChatbot"><i class="far fa-comments"></i></a> -->
                     <a href="https://m.me/bateladata" class="LienChatbot"><img src="Img/Batela.jpg" alt="Batela"></a>
@@ -52,4 +73,36 @@
             </footer>
         </div>
     </body>
+        <script>
+            var div = document.createElement('div');
+            div.className = 'fb-customerchat';
+            div.setAttribute('page_id', '102196981767298');
+            div.setAttribute('ref', '');
+            document.body.appendChild(div);
+            window.fbMessengerPlugins = window.fbMessengerPlugins || {
+                init: function () {
+                FB.init({
+                    appId            : '1678638095724206',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v8.0'
+                });
+                }, callable: []
+            };
+            window.fbAsyncInit = window.fbAsyncInit || function () {
+                window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+                window.fbMessengerPlugins.init();
+            };
+            setTimeout(function () {
+                (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            }, 0);
+        </script>
+        <script id="6033c635deb7f5519fa6a3f9" src="https://dashboard.chatfuel.com/integration/fb-entry-point.js" async defer></script>
 </html>
